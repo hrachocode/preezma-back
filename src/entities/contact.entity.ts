@@ -11,6 +11,9 @@ export class ContactEntity extends BaseEntity {
     @Column({ name: 'phone', type: 'varchar' })
     public phone: string;
 
+    @Column({ name: 'date', type: 'date', nullable: true })
+    public date: Date;
+
     @CreateDateColumn({ name: 'dateCreated', type: 'date' })
-    public dateCreated: Date;
+    public createdAt: Date;
 };
